@@ -9,7 +9,7 @@ private var portal : Component;
 function Start() 
 {
 	renderer.material.color = Color.red;
-	//portal = GameObject.Find("Return Portal").GetComponent("ScalePuzzleScript");
+	portal = GameObject.Find("Return Portal").GetComponent("ScalePuzzleScript");
 }
 
 
