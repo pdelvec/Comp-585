@@ -1,0 +1,20 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets\Scripts\Power.js">
+    <Files>
+      <File FileName="Assets\GUI\DelegateMenu.cs" Line="17" Column="2" />
+      <File FileName="Assets\Standard Assets\Character Controllers\Sources\Scripts\FPSInputController.js" Line="31" Column="1" />
+      <File FileName="Assets\destroy.js" Line="5" Column="16" />
+      <File FileName="Assets\GUI\HUD.js" Line="5" Column="87" />
+      <File FileName="Assets\Scripts\World.js" Line="35" Column="33" />
+      <File FileName="Assets\Scripts\bgmcontrol.js" Line="1" Column="1" />
+      <File FileName="Assets\Scripts\Fall.js" Line="8" Column="1" />
+      <File FileName="Assets\Standard Assets\Character Controllers\Sources\Scripts\CharacterMotor.js" Line="75" Column="70" />
+      <File FileName="Assets\Scripts\Power.js" Line="11" Column="37" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
