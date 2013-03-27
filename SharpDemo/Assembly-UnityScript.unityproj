@@ -47,6 +47,7 @@
      <Compile Include="Assets\GUI\HUD.js" />
      <Compile Include="Assets\Scripts\Coin.js" />
      <Compile Include="Assets\Scripts\CollisionNoteBoxScript.js" />
+     <Compile Include="Assets\Scripts\CollisionNoteBoxScriptTutorial.js" />
      <Compile Include="Assets\Scripts\CrossHair.js" />
      <Compile Include="Assets\Scripts\Fall.js" />
      <Compile Include="Assets\Scripts\Portal.js" />
