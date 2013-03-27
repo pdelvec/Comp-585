@@ -35,6 +35,6 @@ function RemoveNote() {
 }
 
 function OnGUI() {
-    GUI.Label( Rect( 0, 0, 100, 100 ), "NOTES:"+ notes);
-    GUI.Label( Rect(100,0,150,100), "NOTES REMAINING:" + remainingNotes);
+    GUI.Label( Rect( 0, 10, 100, 100 ), "NOTES:"+ notes);
+    GUI.Label( Rect(100,10,150,100), "NOTES REMAINING:" + remainingNotes);
 }

@@ -37,13 +37,16 @@ function OnCollisionExit(collision : Collision)
     if(collision.gameObject.name == correctNoteBoxName)
 	{
 		
+		/*if(isCorrect) {
+			portal.SendMessage("RemoveNote");
+			component.GetComponent("notereceptorplay").SendMessage("TurnOff");
+		}*/
 		isCorrect = false;
 		collision.gameObject.audio.enabled = true;
 		renderer.material.color = Color.red;
 		GameObject.Find(component.name + "/RewardParticles").particleSystem.Stop();
 		Debug.Log("No longer in contact");
-		portal.SendMessage("RemoveNote");
-		component.GetComponent("notereceptorplay").SendMessage("TurnOff");
+		
 	}
 }
 
