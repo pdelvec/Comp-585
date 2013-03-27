@@ -19,7 +19,7 @@ function OnMouseDown()
 function Update () {
 
 	if (Time.time % timeInterval < 1) {
-		if (!audioComponent.audio.isPlaying) {
+		if (!audioComponent.audio.isPlaying && audioComponent.audio.enabled == true) {
 			audioComponent.audio.Play();
 			GameObject.Find(audioComponent.name + "/Shockwave").particleSystem.Play();
 
