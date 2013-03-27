@@ -4,35 +4,41 @@ var component : Component;
 var correctNoteBoxName : String;
 var timeInterval : int;
 private var isCorrect = false;
+private var portal : Component;
 
 function Start() 
 {
 	renderer.material.color = Color.red;
+	portal = GameObject.Find("Return Portal").GetComponent("ScalePuzzleScript");
 }
 
 
 function OnCollisionStay(collision : Collision) 
 {
-	if(collision.gameObject.name == "NoteBox")
+	if(collision.gameObject.name == correctNoteBoxName)
 	{
 		//GameObject.Find(component.name + "/RewardNote").audio.Play();
+		if(isCorrect == false)
+			portal.SendMessage("AddNote");
 		isCorrect = true;
 		renderer.material.color = Color.green;
 		Destroy(GameObject.Find("endgate"));	//get rid of fence to portal
 		GameObject.Find(component.name + "/RewardParticles").particleSystem.Play();
+		
 	}
 		Debug.Log(collision.gameObject + "isCorrect = " + isCorrect);
 }
 
 function OnCollisionExit(collision : Collision) 
 {
-    if(collision.gameObject.name == "NoteBox")
+    if(collision.gameObject.name == correctNoteBoxName)
 	{
 		
 		isCorrect = false;
 		renderer.material.color = Color.red;
 		GameObject.Find(component.name + "/RewardParticles").particleSystem.Stop();
 		Debug.Log("No longer in contact");
+		portal.SendMessage("RemoveNote");
 	}
 }
 
