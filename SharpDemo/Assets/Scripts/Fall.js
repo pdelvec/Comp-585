@@ -8,7 +8,18 @@ function Start () {
 
 }
 
-function OnTriggerEnter (other : Collider) {
+function OnTriggerEnter (other : Collider) 
+{
 
-	Application.LoadLevel (levelToLoad);
+//play a death sound
+
+
+	if (levelToLoad == "spacestation")	//your code is bad and you should feel bad
+	{
+		other.transform.position = Vector3(-38.24667, 2.731857, 41.28137);
+	}
+	else
+	{
+		Application.LoadLevel (levelToLoad);
+	}
 }

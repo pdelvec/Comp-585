@@ -19,6 +19,7 @@ function Update ()
  
     if(isHolding == true)
     {
+    	//Object1.collider.enabled = false;
         Object1.rigidbody.useGravity = false; //sets gravity to not on so it doesn't just fall to the ground
  
         Object1.parent = SpawnTo; //parents the object
@@ -31,6 +32,7 @@ function Update ()
     }
     else
     { //if isHolding isn't true
+        	//Object1.collider.enabled = true;
             SpawnTo.transform.DetachChildren(); //detach child (object) from hand
             Object1.rigidbody.useGravity = true; //add the gravity back on
     }
