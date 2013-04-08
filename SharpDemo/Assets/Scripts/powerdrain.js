@@ -1,5 +1,5 @@
 var world : World;
-var character: CharacterMotor;
+var character : CharacterMotor;
 
 function Start () {
 	world = GameObject.Find("World").GetComponent("World");
@@ -7,14 +7,22 @@ function Start () {
 }
 
 function Update () {
-	if(world.powerdrain > 0){
-		if(Input.GetKeyDown(KeyCode.Space))
-		{
-			world.powerdrain--;
-			if(world.powerdrain == 0){
-				character.jumping.baseHeight = 1;
-				world.power = "";
+			if (character.IsGrounded () == true )	
+			{
+				Debug.Log("GROUNDED!");
 			}
+	if(world.powerdrain > 0) 
+	{
+		if(Input.GetKeyDown(KeyCode.Space) )
+		{	
+
+				world.powerdrain--;
+				if(world.powerdrain == 0)
+				{
+					character.jumping.baseHeight = 1;
+					world.power = "";
+				}
+			
 		}
 	}
 }

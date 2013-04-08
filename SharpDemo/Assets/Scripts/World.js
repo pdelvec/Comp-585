@@ -39,7 +39,7 @@ function Update() {
 function Addjump() {
 	
 	power = "boostjump";
-	powerdrain = 5;
+	powerdrain += 5;
 	if (powerdrain > 100) 
 	{
 		powerdrain = 100;
