@@ -1,8 +1,10 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Fall.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/World.js">
     <Files>
       <File FileName="Assets/Scripts/Fall.js" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Power.js" Line="13" Column="31" />
+      <File FileName="Assets/Scripts/World.js" Line="42" Column="14" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

@@ -1,7 +1,7 @@
 var coins : int = 0;
 var remainingCoins = 3;
 var power = "";
-var powerdrain: int;
+var powerdrain : int;
 
 
 function Start() {
@@ -36,9 +36,14 @@ function Update() {
 	}
 }
 
-function Addjump(){
+function Addjump() {
+	
 	power = "boostjump";
 	powerdrain = 5;
+	if (powerdrain > 100) 
+	{
+		powerdrain = 100;
+	}
 }
 
 function AddCoin () {
