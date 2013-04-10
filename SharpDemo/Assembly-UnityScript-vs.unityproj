@@ -58,6 +58,7 @@
      <Compile Include="Assets\Scripts\newpickup.js" />
      <Compile Include="Assets\Scripts\noteboxplay.js" />
      <Compile Include="Assets\Scripts\notereceptorplay.js" />
+     <Compile Include="Assets\Scripts\pickupscript2.js" />
      <Compile Include="Assets\Scripts\powerdrain.js" />
      <Compile Include="Assets\Scripts\stolenpickup.js" />
      <Compile Include="Assets\destroy.js" />

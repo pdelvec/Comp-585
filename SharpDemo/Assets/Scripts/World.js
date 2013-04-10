@@ -39,11 +39,11 @@ function Update() {
 function Addjump() {
 	
 	power = "boostjump";
-	powerdrain += 5;
-	if (powerdrain > 100) 
+	powerdrain = 10;
+	/*if (powerdrain > 100) 
 	{
 		powerdrain = 100;
-	}
+	}*/
 }
 
 function AddCoin () {
