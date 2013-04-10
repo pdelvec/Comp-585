@@ -1,8 +1,11 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/stolenpickup.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/Power.js">
     <Files>
-      <File FileName="Assets/Scripts/stolenpickup.js" Line="5" Column="1" />
+      <File FileName="Assets/Scripts/stolenpickup.js" Line="11" Column="35" />
+      <File FileName="Assets/Scripts/newpickup.js" Line="20" Column="20" />
+      <File FileName="Assets/Scripts/CollisionNoteBoxScriptTutorial.js" Line="12" Column="1" />
+      <File FileName="Assets/Scripts/Power.js" Line="17" Column="2" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
