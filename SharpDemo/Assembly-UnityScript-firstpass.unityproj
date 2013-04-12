@@ -51,6 +51,7 @@
      <Compile Include="Assets\Standard Assets\Character Controllers\Sources\Scripts\ThirdPersonController.js" />
      <None Include="Assets\Nobiax Free Textures 01\Nobiax Free Textures 01.txt" />
      <None Include="Assets\Nobiax Free Textures 03\readme.txt" />
+     <None Include="Assets\Models\Human Spaceflight - Shuttle, ISS era\International Space Station High Res (JSC)\README.txt" />
      <None Include="Assets\Nobiax Free Textures 02\Nobiax Free Textures 02.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
