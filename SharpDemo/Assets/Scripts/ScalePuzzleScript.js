@@ -7,6 +7,12 @@ var remainingNotes = 8;
 
 function Start () {
 
+	if (Application.loadedLevelName.Equals("space2") )
+	{
+		remainingNotes = 3;
+	}
+
+
 }
 
 function Update () {

@@ -5,11 +5,16 @@ var correctNoteBoxName : String;
 var timeInterval : int;
 private var isCorrect = false;
 private var portal : Component;
+var world : World;
+var thrusterOn = false;
+var thrusterName : String;
 
 function Start() 
 {
+    world = GameObject.Find("World").GetComponent("World");
 	renderer.material.color = Color.red;
 	portal = GameObject.Find("Return Portal").GetComponent("ScalePuzzleScript");
+	
 }
 
 
@@ -24,6 +29,15 @@ function OnCollisionStay(collision : Collision)
 		}
 		collision.gameObject.audio.enabled = false;
 		isCorrect = true;
+		
+		if (!thrusterOn)
+		{
+			GameObject.Find(thrusterName).particleSystem.Play();
+			GameObject.Find(thrusterName).audio.Play();
+			thrusterOn = true;
+			world.SendMessage("AddThruster");		
+		}
+		
 		renderer.material.color = Color.green;
 		Destroy(GameObject.Find("endgate"));	//get rid of fence to portal
 		GameObject.Find(component.name + "/RewardParticles").particleSystem.Play();
@@ -53,6 +67,8 @@ function OnCollisionExit(collision : Collision)
 
 function Update()
 {
+
+
 	var reward = GameObject.Find(component.name + "/RewardNote");
 	/*if(isCorrect)
 	{
@@ -66,3 +82,4 @@ function Update()
 		}
 	}*/
 }
+

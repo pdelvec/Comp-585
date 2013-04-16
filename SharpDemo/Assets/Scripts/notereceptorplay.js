@@ -36,8 +36,9 @@ function Update (){
 	}
 	else if(Input.GetKeyDown(KeyCode.E))
     { //if you press 'e'
-    	if(Vector3.Distance(SpawnTo.position, Object1.position) < dist && !audioComponent.audio.isPlaying )
+    	if(Vector3.Distance(SpawnTo.position, Object1.position) < dist)
         {
+            audioComponent.audio.Stop();
        	 	audioComponent.audio.Play();
 			GameObject.Find(audioComponent.name + "/Shockwave").particleSystem.Play();
 		}

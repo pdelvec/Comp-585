@@ -9,6 +9,7 @@ function Start() {
 function OnTriggerEnter( other : Collider ) {
    world.SendMessage("Addjump");
    character.jumping.baseHeight = 12;
+   this.audio.Play();
    this.renderer.enabled = false;
    this.collider.enabled = false;
 

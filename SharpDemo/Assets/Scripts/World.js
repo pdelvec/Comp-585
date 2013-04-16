@@ -2,7 +2,8 @@ var coins : int = 0;
 var remainingCoins = 3;
 var power = "";
 var powerdrain : int;
-
+var thrusters : int = 0;
+var remainingThrusters = 3;
 
 function Start() {
 
@@ -10,6 +11,8 @@ function Start() {
 
 function Update() {
 
+
+/*
 	//getting the sound objects
 	var bgmt1 = GameObject.Find("Bgmtrack1");
 	var bgmt2 = GameObject.Find("Bgmtrack2");
@@ -34,6 +37,8 @@ function Update() {
 		door.renderer.enabled = true;
 		door.collider.enabled = true;
 	}
+	
+*/
 }
 
 function Addjump() {
@@ -51,8 +56,24 @@ function AddCoin () {
    remainingCoins--;
 }
 
+function AddThruster()
+{
+	thrusters++;
+	remainingThrusters--;
+
+}
+
+
 
 function OnGUI() {
-    GUI.Label( Rect( 0, 0, 100, 100 ), "COINS:"+coins);
-    GUI.Label( Rect(100,0,150,100), "Power:"+power+" "+powerdrain);
+
+		GUI.Label( Rect( 0, 0, 100, 100 ), "Thrusters:"+thrusters);
+    	GUI.Label( Rect(100,0,150,100), "Power:"+power+" "+powerdrain);
+    	
+	if (Application.loadedLevelName.Equals("space2") )
+	{
+		GUI.Label( Rect( 50, 50, 500, 500 ), 
+			"The maintenance crew is working on your ship. Help them out by turning on each of the three major thrusters!");
+	}
+
 }

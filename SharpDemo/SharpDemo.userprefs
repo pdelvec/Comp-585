@@ -1,16 +1,16 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/CrossHair.js">
+  <MonoDevelop.Ide.Workbench ActiveDocument="Assets/Scripts/CollisionNoteBoxScript.js">
     <Files>
-      <File FileName="Assets/Scripts/stolenpickup.js" Line="5" Column="9" />
-      <File FileName="Assets/Scripts/pickupscript2.js" Line="29" Column="2" />
-      <File FileName="Assets/Scripts/Power.js" Line="26" Column="3" />
-      <File FileName="Assets/Scripts/World.js" Line="42" Column="18" />
-      <File FileName="Assets/Scripts/notereceptorplay.js" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/CollisionNoteBoxScriptTutorial.js" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/CollisionNoteBoxScript.js" Line="1" Column="1" />
-      <File FileName="Assets/Scripts/ScalePuzzleScript.js" Line="22" Column="33" />
-      <File FileName="Assets/Scripts/CrossHair.js" Line="14" Column="2" />
+      <File FileName="Assets/Scripts/stolenpickup.js" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/pickupscript2.js" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Power.js" Line="12" Column="22" />
+      <File FileName="Assets/Scripts/World.js" Line="70" Column="38" />
+      <File FileName="Assets/Scripts/notereceptorplay.js" Line="39" Column="68" />
+      <File FileName="Assets/Scripts/CollisionNoteBoxScript.js" Line="36" Column="47" />
+      <File FileName="Assets/Scripts/ScalePuzzleScript.js" Line="12" Column="17" />
+      <File FileName="Assets/Scripts/CrossHair.js" Line="1" Column="1" />
+      <File FileName="Assets/Scripts/Fall.js" Line="29" Column="6" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>

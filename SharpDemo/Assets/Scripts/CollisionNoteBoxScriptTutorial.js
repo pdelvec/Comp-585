@@ -3,12 +3,14 @@
 var component : Component;
 var correctNoteBoxName : String;
 var timeInterval : int;
+var world : World;
 private var isCorrect = false;
 private var portal : Component;
 
 function Start() 
 {
 	renderer.material.color = Color.red;
+	world = GameObject.Find("World").GetComponent("World");
 	portal = GameObject.Find("Return Portal").GetComponent("ScalePuzzleScript");
 }
 
