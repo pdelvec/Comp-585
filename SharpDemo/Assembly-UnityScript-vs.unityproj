@@ -18,7 +18,7 @@
 	<DebugType>full</DebugType>
 	<Optimize>false</Optimize>
 	<OutputPath>Temp\bin\Debug\</OutputPath>
-	<DefineConstants>DEBUG;TRACE;UNITY_WEBPLAYER;WEBPLUG;ENABLE_MICROPHONE;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;ENABLE_AUDIO_FMOD;ENABLE_NETWORK;ENABLE_MONO;ENABLE_PHYSICS;ENABLE_TERRAIN;ENABLE_CACHING;ENABLE_SUBSTANCE;ENABLE_GENERICS;ENABLE_CLOTH;ENABLE_MOVIES;ENABLE_AUDIO;ENABLE_WWW;ENABLE_SHADOWS;ENABLE_DUCK_TYPING;UNITY_4_0_1;UNITY_4_0;ENABLE_PROFILER;UNITY_EDITOR</DefineConstants>
+	<DefineConstants>DEBUG;TRACE;UNITY_WEBPLAYER;WEBPLUG;ENABLE_MICROPHONE;ENABLE_IMAGEEFFECTS;ENABLE_WEBCAM;ENABLE_AUDIO_FMOD;ENABLE_NETWORK;ENABLE_MONO;ENABLE_PHYSICS;ENABLE_TERRAIN;ENABLE_CACHING;ENABLE_SUBSTANCE;ENABLE_GENERICS;ENABLE_CLOTH;ENABLE_MOVIES;ENABLE_AUDIO;ENABLE_WWW;ENABLE_SHADOWS;ENABLE_DUCK_TYPING;UNITY_4_1_2;UNITY_4_1;ENABLE_PROFILER;UNITY_EDITOR</DefineConstants>
 	<ErrorReport>prompt</ErrorReport>
 	<WarningLevel>4</WarningLevel>
 	<NoWarn>0169</NoWarn>
@@ -45,23 +45,31 @@
   </ItemGroup>
   <ItemGroup>
      <Compile Include="Assets\GUI\HUD.js" />
-     <Compile Include="Assets\Scripts\Coin.js" />
-     <Compile Include="Assets\Scripts\CollisionNoteBoxScript.js" />
+     <Compile Include="Assets\RunAndCrouch.js" />
+     <Compile Include="Assets\Scripts\CollisionNoteBoxScriptScale.js" />
      <Compile Include="Assets\Scripts\CollisionNoteBoxScriptTutorial.js" />
      <Compile Include="Assets\Scripts\CrossHair.js" />
      <Compile Include="Assets\Scripts\Fall.js" />
+     <Compile Include="Assets\Scripts\LaserCollide.js" />
      <Compile Include="Assets\Scripts\Portal.js" />
      <Compile Include="Assets\Scripts\Power.js" />
-     <Compile Include="Assets\Scripts\ScalePuzzleScript.js" />
-     <Compile Include="Assets\Scripts\World.js" />
+     <Compile Include="Assets\Scripts\bCollisionNoteBoxScript.js" />
+     <Compile Include="Assets\Scripts\bScalePuzzleScript.js" />
+     <Compile Include="Assets\Scripts\bWorld.js" />
      <Compile Include="Assets\Scripts\bgmcontrol.js" />
      <Compile Include="Assets\Scripts\newpickup.js" />
      <Compile Include="Assets\Scripts\noteboxplay.js" />
      <Compile Include="Assets\Scripts\notereceptorplay.js" />
      <Compile Include="Assets\Scripts\pickupscript2.js" />
      <Compile Include="Assets\Scripts\powerdrain.js" />
+     <Compile Include="Assets\Scripts\rotate.js" />
      <Compile Include="Assets\Scripts\stolenpickup.js" />
+     <Compile Include="Assets\Scripts\teleport.js" />
+     <Compile Include="Assets\Ufograbbehavior.js" />
+     <Compile Include="Assets\buttonmove.js" />
      <Compile Include="Assets\destroy.js" />
+     <Compile Include="Assets\move_platform.js" />
+     <Compile Include="Assets\planetshrink.js" />
      <None Include="Assets\Nobiax Free Textures 01\Nobiax Free Textures 01.txt" />
      <None Include="Assets\Nobiax Free Textures 03\readme.txt" />
      <None Include="Assets\Models\Human Spaceflight - Shuttle, ISS era\International Space Station High Res (JSC)\README.txt" />

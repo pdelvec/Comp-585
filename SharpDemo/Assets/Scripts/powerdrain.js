@@ -1,5 +1,6 @@
-var world : World;
-var character : CharacterMotor;
+var world : Component;
+private var character : CharacterMotor;
+private var hit:RaycastHit;
 
 function Start () {
 	world = GameObject.Find("World").GetComponent("World");
@@ -13,7 +14,7 @@ function Update () {
 			}
 	if(world.powerdrain > 0) 
 	{
-		if(Input.GetKeyDown(KeyCode.Space) )
+		if(Input.GetKeyDown(KeyCode.Space)&& Physics.Raycast (transform.position, -Vector3.up, hit, 3)  )
 		{	
 
 				world.powerdrain--;

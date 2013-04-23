@@ -3,7 +3,7 @@
 var component : Component;
 var correctNoteBoxName : String;
 var timeInterval : int;
-var world : World;
+var world : Component;
 private var isCorrect = false;
 private var portal : Component;
 

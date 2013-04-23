@@ -1,6 +1,6 @@
 
-var world : World;
-var character: CharacterMotor;
+private var world : Component;
+private var character: CharacterMotor;
 
 function Start() {
    world = GameObject.Find("World").GetComponent("World");
